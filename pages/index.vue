@@ -22,6 +22,7 @@
         >
           GitHub
         </a>
+        <NuxtLink to="/fun">Fun page </NuxtLink>
       </div>
     </div>
   </div>
