@@ -1,2 +1,55 @@
-@import 'sass/custom-vars';
-@import 'sass/buttons';
+@import "sass/custom-vars";
+@import "sass/fonts";
+@import "sass/typography";
+@import "sass/utility";
+@import "sass/hero";
+@import "sass/colors";
+@import "sass/buttons";
+
+html {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: white !important;
+  background-color: #282f44 !important;
+  font-family: "Alata", sans-serif;
+}
+
+.spacer {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.font-container {
+  margin: 40px 0;
+  border-left: 1px solid white;
+  padding-left: 20px;
+}
+
+.color-block {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 4px solid white;
+  flex: 0 1 100px;
+  margin-right: 1em;
+  border-radius: 10px;
+}

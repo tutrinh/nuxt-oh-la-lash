@@ -1,0 +1,35 @@
+.isFullheight {
+  min-height: 100vh;
+  background-color: yellow;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+  position: relative;
+}
+
+@include media-breakpoint-down(sm) {
+  .isFullheight {
+    background-image: none;
+  }
+}
+
+.border-right {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.is-card {
+  background-color: #0d1c2e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.has-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
+}
