@@ -137,3 +137,24 @@ url('~assets/images/image.png')
 
 .is-card
 .has-shadow
+
+Setup Hostinger to Deploy with Git push
+Lateset output
+Deployment start
+Repository git@github.com:tutrinh/portfolio-vue-nuxt.git
+Checking project directory is empty
+Project directory is empty
+Cloning code repository
+Repository cloned
+Looking for composer.lock file
+composer.lock file was not found
+Looking for composer.json file
+composer.json file was not found
+Deployment end
+
+Webhook URL
+https://webhooks.hostinger.com/deploy/ef05e5d55f36e29528db654cb75b47a1
+Setup webhook on Github:
+https://github.com/tutrinh/portfolio-vue-nuxt/settings/hooks/new
+Setup tutorial
+https://developer.github.com/webhooks/creating/
