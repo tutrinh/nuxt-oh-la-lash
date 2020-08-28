@@ -30,7 +30,10 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'index',
+  layout: 'home'
+}
 </script>
 
 

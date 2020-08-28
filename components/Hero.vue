@@ -5,11 +5,12 @@
       :class="{isFullheight}"
       style="background-image: url('images/lighthouse.jpg')"
     >
-      <div class="hero-container container-sm container-fluid">
+    <Navbar/>
+      <div class="hero-container container container-fluid">
         <div class="row">
           <div class="col-md-6">
             <!-- <div class="title jumbo my-4">Welcome</div> -->
-            <img class="mt-4" src="images/hellotu-logo.svg" alt />
+            <!-- <img class="mt-4" src="images/hellotu-logo.svg" alt /> -->
             <div
               class="sub-title my-4"
             >Subtitle - Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, pariatur?</div>
@@ -29,13 +30,13 @@
                 <div class="sub-title color-neon-green">hello</div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempora eius soluta est!
               </div>
               <div class="col">
-                <div class="is-card has-shadow">
+                <div class="isCard hasShadow">
                   <div class="sub-title color-neon-blue">hello</div>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
               </div>
               <div class="col">
-                <div class="is-card has-shadow color-bg-white color-black">
+                <div class="isCard hasShadow color-bg-white color-black">
                   <div class="sub-title color-neon-blue">hello</div>
                   <p class="line-height-tight">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>

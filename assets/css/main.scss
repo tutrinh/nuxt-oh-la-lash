@@ -31,6 +31,16 @@ body {
   font-family: "Alata", sans-serif;
 }
 
+.navbar-layout a {
+  color: white;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &:hover {
+    color: white;
+  }
+}
+
 .spacer {
   display: block;
   clear: both;

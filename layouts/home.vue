@@ -1,6 +1,6 @@
 <template>
   <div class="dafault-layout">
-    <Navbar />
+    <!-- <Navbar /> -->
     <Nuxt />
     <Footer />
   </div>

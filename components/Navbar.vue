@@ -1,7 +1,18 @@
 <template>
-    <div class="navbar-layout">
+    <div class="navbar-layout border-bottom">
         <div class="container">
-            <h1>Navbar layout</h1>
+            <!-- Desktop -->
+            <div class="d-flex justify-content-between py-4">
+                <div class="container__logo">
+                    <NuxtLink to="/"><img class="" src="images/hellotu-logo.svg" alt="Personal site of Tu Trinh" /></NuxtLink>
+                </div>
+                <div class="container__menu">
+                    <b-nav>
+                        <b-nav-item active to="/" class="border-right py-0">Home</b-nav-item>
+                        <b-nav-item to="/styleguide" class="px-0">Styleguide</b-nav-item>
+                    </b-nav>
+                </div>
+            </div>
         </div>
         
     </div>

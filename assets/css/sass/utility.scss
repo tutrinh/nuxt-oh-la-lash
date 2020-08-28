@@ -23,13 +23,16 @@
 .border-right {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
+.border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
 
-.is-card {
+.isCard {
   background-color: #0d1c2e;
   padding: 20px;
   border-radius: 10px;
 }
 
-.has-shadow {
+.hasShadow {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
 }
