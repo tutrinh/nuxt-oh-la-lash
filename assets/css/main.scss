@@ -5,6 +5,7 @@
 @import "sass/hero";
 @import "sass/colors";
 @import "sass/buttons";
+@import "sass/hello-card";
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -27,7 +28,7 @@ html {
 
 body {
   color: white !important;
-  background-color: #282f44 !important;
+  background-color: #0e0f1e !important;
   font-family: "Alata", sans-serif;
 }
 
@@ -38,6 +39,24 @@ body {
 
   &:hover {
     color: white;
+  }
+}
+
+.cta {
+  color: #21b8d3;
+
+  &hover {
+    color: white;
+  }
+}
+
+.footer {
+  a {
+    color: #21b8d3;
+
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -62,4 +81,10 @@ body {
   flex: 0 1 100px;
   margin-right: 1em;
   border-radius: 10px;
+}
+
+.logo {
+  &--small {
+    width: 78px;
+  }
 }

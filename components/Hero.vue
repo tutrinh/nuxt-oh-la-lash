@@ -5,7 +5,7 @@
       :class="{isFullheight}"
       style="background-image: url('images/lighthouse.jpg')"
     >
-    <Navbar/>
+    <Navbar :has-border="true" />
       <div class="hero-container container container-fluid">
         <div class="row">
           <div class="col-md-6">

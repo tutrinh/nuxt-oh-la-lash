@@ -1,6 +1,6 @@
 .isFullheight {
   min-height: 100vh;
-  background-color: yellow;
+  background-color: transparent;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -21,10 +21,14 @@
 }
 
 .border-right {
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.35) !important;
 }
 .border-bottom {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 .isCard {
@@ -35,4 +39,17 @@
 
 .hasShadow {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
+}
+
+
+.grid-item-center {
+  display: grid;
+  place-items: center;
+}
+
+.grid-three {
+ height: auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); 
 }

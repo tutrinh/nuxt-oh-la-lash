@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar-layout border-bottom">
+    <div class="navbar-layout mb-4" :class="{'border-bottom': hasBorder}">
         <div class="container">
             <!-- Desktop -->
             <div class="d-flex justify-content-between py-4">
@@ -20,7 +20,13 @@
 
 <script>
     export default {
-        
+        name: 'navbar',
+        props: {
+            hasBorder: {
+                type: Boolean,
+                default: false
+            }
+        }
     }
 </script>
 

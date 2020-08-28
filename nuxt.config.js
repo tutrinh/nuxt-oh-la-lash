@@ -14,7 +14,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    // title: process.env.npm_package_name || "",
+    title: "Personal Site of Tu Trinh",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
