@@ -1,4 +1,29 @@
 .btn {
-    padding-bottom: 10px;
-    min-width: 60px;
+  min-width: 160px;
+
+  &:hover {
+    .link-icon {
+      margin-left: 8px;
+    }
+  }
+}
+
+.link-icon {
+  width: 26px;
+  display: inline-block;
+  margin-left: 0;
+  transition: all 0.25s ease;
+}
+
+.cta {
+  color: #21b8d3;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+
+    .link-icon {
+      margin-left: 8px;
+    }
+  }
 }

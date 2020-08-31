@@ -31,6 +31,13 @@
   border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
+.spacer {
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 40px 0;
+}
+
 .isCard {
   background-color: #0d1c2e;
   padding: 20px;
@@ -41,15 +48,14 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
 }
 
-
 .grid-item-center {
   display: grid;
   place-items: center;
 }
 
 .grid-three {
- height: auto;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr); 
+  height: auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
 }

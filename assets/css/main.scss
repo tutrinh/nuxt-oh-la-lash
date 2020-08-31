@@ -6,6 +6,7 @@
 @import "sass/colors";
 @import "sass/buttons";
 @import "sass/hello-card";
+@import "sass/footer";
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -40,31 +41,6 @@ body {
   &:hover {
     color: white;
   }
-}
-
-.cta {
-  color: #21b8d3;
-
-  &hover {
-    color: white;
-  }
-}
-
-.footer {
-  a {
-    color: #21b8d3;
-
-    &:hover {
-      color: white;
-    }
-  }
-}
-
-.spacer {
-  display: block;
-  clear: both;
-  width: 100%;
-  margin: 40px 0;
 }
 
 .font-container {
