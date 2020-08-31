@@ -1,12 +1,13 @@
 @import "sass/custom-vars";
+@import "sass/colors";
 @import "sass/fonts";
 @import "sass/typography";
 @import "sass/utility";
 @import "sass/hero";
-@import "sass/colors";
 @import "sass/buttons";
 @import "sass/hello-card";
 @import "sass/footer";
+@import "sass/nuxt-content";
 
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero :is-fullheight="true" />
-    <div class="section color-bg-black">
+    <div class="section">
       <div class="container container-fluid">
         <div class="row">
           <div class="col py-4 grid-item-center">

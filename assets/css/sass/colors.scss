@@ -1,66 +1,59 @@
-.color-navy {
-  color: #283149;
-}
-.color-bg-navy {
-  background-color: #283149;
-}
-.color-coral {
-  color: #ffc2c2;
-}
-.color-bg-coral {
-  background-color: #ffc2c2;
-}
-.color-sunset {
-  color: #ffb421;
-}
-.color-bg-sunset {
-  background-color: #ffb421;
-}
-.color-light-gray {
-  color: #f6f4f2;
-}
-.color-bg-light-gray {
-  background-color: #f6f4f2;
-}
-.color-white {
-  color: white;
-}
-.color-bg-white {
-  background-color: white;
-}
-.color-black {
-  color: #0e0f1e;
-}
-.color-bg-black {
-  background-color: #0e0f1e;
-}
-.color-gold {
-  color: #e6b31e;
-}
-.color-bg-gold {
-  background-color: #e6b31e;
-}
-.color-red {
-  color: #f64e4d;
-}
-.color-bg-red {
-  background-color: #f64e4d;
-}
-.color-light-blue {
-  color: #dbedf3;
-}
-.color-bg-light-blue {
-  background-color: #dbedf3;
-}
-.color-neon-green {
-  color: #47e090;
-}
-.color-bg-neon-green {
-  background-color: #47e090;
-}
-.color-neon-blue {
-  color: #21b8d3;
-}
-.color-bg-neon-blue {
-  background-color: #21b8d3;
-}
+// Color Palette
+$navy: #283149 !default;
+$coral: #ffc2c2 !default;
+$sunset: #ffb421 !default;
+$light-gray: #f6f4f2 !default;
+$black: #0e0f1e !default;
+$gold: #e6b31e !default;
+$red: #f64e4d !default;
+$light-blue: #dbedf3 !default;
+$neon-green: #47ebb4 !default;
+// $neon-green: #47e090 !default;
+$neon-blue: #21b8d3 !default;
+$white: #ffffff !default;
+$colors: () !default;
+$colors: map-merge(
+  (
+    "navy": $navy,
+    "coral": $coral,
+    "sunset": $sunset,
+    "light-gray": $light-gray,
+    "black": $black,
+    "gold": $gold,
+    "red": $red,
+    "light-blue": $light-blue,
+    "neon-green": $neon-green,
+    "neon-blue": $neon-blue,
+    "primary": $neon-green,
+    "secondary": $neon-blue,
+    "accent": $gold,
+    "white": $white
+  ),
+  $colors
+);
+
+@mixin color-bg {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      background-color: $hex;
+    }
+  }
+} // @mixin bg-colors
+
+@mixin color {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      color: $hex;
+    }
+  }
+} // @mixin colors
+
+.color-bg {
+  // This creates .color-bg-name classes for everything in the $colors map. example: .color-bg-red
+  @include color-bg;
+} // .color-bg
+
+.color {
+  // This creates .color-name classes for everything in the $colors map.  example: .color-red
+  @include color;
+} // .ecc-font-color

@@ -60,6 +60,13 @@ export default {
     "bootstrap-vue/nuxt",
     "@nuxt/content"
   ],
+  content: {
+    markdown: {
+      prism: {
+        theme: "prism-themes/themes/prism-duotone-sea.css"
+      }
+    }
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

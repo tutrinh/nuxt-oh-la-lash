@@ -1,7 +1,7 @@
 <template>
   <div>
     <article>
-      <h1>Home</h1>
+      <h1>Home 2</h1>
       <input id="search" v-model="q" placeholder="Search..." />
       <ul>
         <li v-for="article in articles" :key="article.slug">

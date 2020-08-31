@@ -1,0 +1,42 @@
+.content-sidebar-nav {
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+
+  li {
+    padding: 4px 0;
+
+    a {
+      color: $neon-green;
+      font-weight: 100;
+      padding: 6px 8px;
+      //   background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+  }
+}
+
+#search {
+  width: 90%;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 4px 8px;
+  background-color: #1d262f;
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.article-bottom-nav {
+  .prev,
+  .next {
+    color: $neon-blue;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

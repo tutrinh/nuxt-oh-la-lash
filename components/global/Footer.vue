@@ -1,5 +1,5 @@
 <template>
-  <div class="footer font-alata py-4 color-bg-black">
+  <div class="footer font-alata py-4">
     <div class="container border-top py-4">
       <div class="row">
         <div class="col">
@@ -12,6 +12,7 @@
           <b-nav vertical class="text-right">
             <b-nav-item to="/">Home</b-nav-item>
             <b-nav-item to="/styleguide">Styleguide</b-nav-item>
+            <b-nav-item to="/articles">Articles</b-nav-item>
             <b-nav-item>Privacy Policy</b-nav-item>
           </b-nav>
         </div>
