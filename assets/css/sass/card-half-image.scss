@@ -35,13 +35,3 @@
     object-fit: cover;
   }
 }
-
-.grid-half {
-  display: flex;
-  flex-direction: column;
-
-  @include media-breakpoint-up(md) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}

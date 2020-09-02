@@ -3,6 +3,23 @@ title: Colors
 position: 3
 ---
 
+### Neutral
+
+<div class="d-block color-bg-black">
+&nbsp;
+</div>
+
+```
+$black: #0e0f1e !default;
+classnames:
+color-black
+color-bg-black
+color-black
+color-black;
+```
+
+<div class="spacer"></div>
+
 ### Primary
 
 <div class="d-block color-bg-primary">

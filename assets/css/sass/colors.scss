@@ -3,6 +3,7 @@ $navy: #283149 !default;
 $coral: #ffc2c2 !default;
 $sunset: #ffb421 !default;
 $light-gray: #f6f4f2 !default;
+$smoke: #ededed !default;
 $black: #0e0f1e !default;
 $gold: #e6b31e !default;
 $red: #f64e4d !default;
@@ -11,6 +12,7 @@ $neon-green: #47ebb4 !default;
 // $neon-green: #47e090 !default;
 $neon-blue: #21b8d3 !default;
 $white: #ffffff !default;
+
 $colors: () !default;
 $colors: map-merge(
   (
@@ -35,7 +37,7 @@ $colors: map-merge(
 @mixin color-bg {
   @each $name, $hex in $colors {
     &-#{$name} {
-      background-color: $hex;
+      background-color: $hex !important;
     }
   }
 } // @mixin bg-colors
@@ -56,4 +58,4 @@ $colors: map-merge(
 .color {
   // This creates .color-name classes for everything in the $colors map.  example: .color-red
   @include color;
-} // .ecc-font-color
+} // .color

@@ -53,11 +53,30 @@
   place-items: center;
 }
 
+.grid-half {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .grid-three {
   height: auto;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column;
+
+    .border-right {
+      border-right: 0 !important;
+    }
+  }
 }
 
 .grid-sidebar {
