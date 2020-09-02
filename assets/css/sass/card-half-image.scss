@@ -1,0 +1,47 @@
+.card-half-image {
+  margin: auto;
+  background-color: white;
+
+  .c-card-half-image {
+    // padding: 20px;
+  }
+
+  .content {
+    padding: 20px;
+
+    @include media-breakpoint-up(md) {
+      padding: 20px;
+    }
+  }
+}
+
+.image-placeholder {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 75%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.grid-half {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
