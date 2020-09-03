@@ -4,9 +4,14 @@ position: 4
 ---
 
 Card with half image and half content. Content is a slot.
+Can pass in a position prop to align the image top, center, or bottom. By default is centered.
+`position="object-position-top` | `position="object-position-bottom`
 
 ```html
-<card-half-image img="images/lashes/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg">
+<card-half-image
+  img="images/lashes/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg"
+  position="object-position-top"
+>
   <!-- Slot for content -->
   <div class="title jumbo font-rozha mb-4">Services</div>
   <p>

@@ -1,9 +1,9 @@
-.isFullheight {
+.is-fullheight {
   min-height: 100vh;
   background-color: transparent;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: center;
   background-size: cover;
   border-style: none;
   margin-left: auto;
@@ -12,6 +12,14 @@
   border-radius: 0px;
   width: 100%;
   position: relative;
+
+  &.position-top {
+    background-position: top !important;
+  }
+
+  &.position-bottom {
+    background-position: bottom !important;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -44,8 +52,8 @@
   border-radius: 10px;
 }
 
-.hasShadow {
-  box-shadow: 0 10px 90px rgba(0, 0, 0, 0.25);
+.has-shadow {
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);
 }
 
 .grid-item-center {
@@ -77,6 +85,13 @@
       border-right: 0 !important;
     }
   }
+}
+
+.grid-gap-1 {
+  grid-gap: 1em !important;
+}
+.grid-gap-0 {
+  grid-gap: 0 !important;
 }
 
 .grid-sidebar {

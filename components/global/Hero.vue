@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div class="hero" :class="{isFullheight}" :style="`background-image: url('${bgImg}')`">
+    <div
+      class="hero"
+      :class="[isFullheight? 'is-fullheight' : '', bgPosition]"
+      :style="`background-image: url('${bgImg}')`"
+    >
       <Navbar v-if="hasNav" :has-border="true" />
       <div class="hero-container container container-fluid">
         <slot></slot>
@@ -20,6 +24,9 @@ export default {
     hasNav: {
       type: Boolean,
       default: false,
+    },
+    bgPosition: {
+      type: String,
     },
   },
 };

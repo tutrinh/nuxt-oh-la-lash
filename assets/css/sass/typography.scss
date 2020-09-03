@@ -14,3 +14,32 @@
 .line-height-tight {
   line-height: 1.25;
 }
+
+.gradient-text {
+  // Gradient text CSS
+  background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accent-line {
+  &-right::after {
+    content: " ";
+    display: inline-block;
+    width: 60px;
+    height: 4px;
+    background-color: currentColor;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  &-bottom::after {
+    content: " ";
+    display: block;
+    width: 14%;
+    height: 4px;
+    background-color: currentColor;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+}

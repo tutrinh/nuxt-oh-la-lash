@@ -1,6 +1,12 @@
 <template>
   <div>
-    <Hero class="color-bg-red" :has-nav="true" :is-fullheight="true" bg-img="images/lighthouse.jpg">
+    <Hero
+      class="color-bg-red"
+      :has-nav="true"
+      :is-fullheight="true"
+      bg-img="images/lashes/alexander-krivitskiy-PoogTvXLv8U-unsplash.jpg"
+      bg-position="position-top"
+    >
       <div class="row">
         <div class="col-md-6">
           <!-- <div class="title jumbo my-4">Welcome</div> -->
@@ -24,13 +30,13 @@
               <div class="sub-title color-neon-green">hello</div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempora eius soluta est!
             </div>
             <div class="col">
-              <div class="isCard hasShadow">
+              <div class="isCard has-shadow">
                 <div class="sub-title color-neon-blue">hello</div>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
             <div class="col">
-              <div class="isCard hasShadow color-bg-white color-black">
+              <div class="isCard has-shadow color-bg-white color-black">
                 <div class="sub-title color-neon-blue">hello</div>
                 <p class="line-height-tight">Lorem ipsum dolor sit amet consectetur.</p>
               </div>
@@ -77,17 +83,40 @@
       </div>
     </Hero>
 
+    <div class="section color-bg-white">
+      <div class="container container-fluid py-4">
+        <div class="grid-three grid-gap-1">
+          <div class="has-shadow">
+            <tu-img img="images/lashes/atikh-bana-zPFws4toKhg-unsplash.jpg" :height="75"></tu-img>
+          </div>
+          <div class="has-shadow">
+            <div class="image-placeholder">
+              <b-img-lazy fluid src="images/lashes/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg" />
+            </div>
+          </div>
+          <div class="has-shadow">
+            <div class="image-placeholder">
+              <b-img-lazy fluid src="images/lashes/semen-zhuravlev-UtSk30R6i5c-unsplash.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Section -->
     <div class="section color-bg-white">
       <div class="container container-fluid py-4">
         <div class="row">
           <div class="col">
-            <card-half-image img="images/lashes/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg">
+            <card-half-image
+              img="images/lashes/alexander-krivitskiy-PoogTvXLv8U-unsplash.jpg"
+              position="object-position-top"
+            >
               <!-- Slot for content -->
-              <div class="title jumbo font-rozha mb-4">Services</div>
+              <div class="title accent-line-right jumbo mb-4">Services</div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a qui sequi, consectetur, numquam similique facere ea cupiditate nisi expedita exercitationem aspernatur vero nulla blanditiis. Tenetur dolores distinctio explicabo facere.</p>
 
-              <div class>
+              <div class="py-4">
                 <a href="/styleguide" class="btn color-bg-black">
                   Styleguide
                   <span class="link-icon">
@@ -186,10 +215,34 @@
   </div>
 </template>
 
+
+
 <script>
 export default {
   name: "index",
   layout: "home",
+  mounted() {
+    var windowLocation =
+      "https://sitecoretest.heart.org/en/test_pages/impact-map";
+
+    var regMatch = /\/impact-map/;
+
+    console.log("REG MATCH");
+    console.log(window.location.href);
+
+    console.log(regMatch.test(windowLocation)); //Worked output true
+
+    //     html {
+    //   scroll-behavior: smooth;
+    // }
+
+    // if there is a value in the state dropdown then scroll to map
+    // document.getElementById('state').value !== "" then scroll to id #map-results
+
+    // var main = document.body
+    // var mapContainer = document.querySelector('.container-fluid.impact-map')
+    // main.scrollTop = mapContainer.offsetTop
+  },
 };
 </script>
 
