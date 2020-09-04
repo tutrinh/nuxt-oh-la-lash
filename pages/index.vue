@@ -163,6 +163,29 @@
     </div>
     <!-- End -->
 
+    <!-- Lightbox -->
+    <div class="section color-bg-white">
+      <div class="container container-fluid py-4">
+        <div>
+          <!-- <button @click="toggler = !toggler">Toggle Lightbox</button> -->
+          <button @click="openLightboxOnSlide(1)">Open lightbox on first slide</button>
+
+          <button @click="openLightboxOnSlide(2)">Open lightbox on second slide</button>
+
+          <FsLightbox
+            :toggler="toggler"
+            :slide="slide"
+            :sources="[
+'images/lighthouse.jpg',
+'images/lashes/alexander-krivitskiy-PoogTvXLv8U-unsplash.jpg'
+]"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- End lightbox -->
+
     <div class="section">
       <div class="container container-fluid">
         <div class="row">
@@ -246,7 +269,25 @@
 </template>
 
 
-
+<script>
+import FsLightbox from "fslightbox-vue";
+export default {
+  layout: "home",
+  components: { FsLightbox },
+  data() {
+    return {
+      toggler: false,
+      slide: 1,
+    };
+  },
+  methods: {
+    openLightboxOnSlide: function (number) {
+      this.slide = number;
+      this.toggler = !this.toggler;
+    },
+  },
+};
+</script>
 
 
 
