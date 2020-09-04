@@ -6,6 +6,15 @@ position: 2
 ## Fonts
 
 <div class="font-container">
+    <h4 class="font-montserrat">Montserrat</h4>
+    <div class="title font-montserrat">Almost before we knew it, we had left the ground.</div>
+</div>
+
+```
+.font-montserrat
+```
+
+<div class="font-container">
     <h4 class="font-atlata">Alata</h4>
     <div class="title">Almost before we knew it, we had left the ground.</div>
 </div>
@@ -16,6 +25,15 @@ default font
 ```
 
 <div class="font-container">
+    <h4 class="font-gilda">Gilda</h4>
+    <div class="title font-gilda">Almost before we knew it, we had left the ground.</div>
+</div>
+
+```
+.font-gilda
+```
+
+<div class="font-container">
     <h4 class="font-rozha">Rozha</h4>
     <div class="title font-rozha">Almost before we knew it, we had left the ground.</div>
 </div>
@@ -23,6 +41,16 @@ default font
 ```
 .font-rozha
 ```
+
+<div class="spacer"></div>
+
+## Weight
+
+| Classes           |
+| ----------------- |
+| `font-weight-300` |
+| `font-weight-500` |
+| `font-weight-700` |
 
 <div class="spacer"></div>
 

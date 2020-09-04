@@ -12,6 +12,7 @@ $neon-green: #47ebb4 !default;
 // $neon-green: #47e090 !default;
 $neon-blue: #21b8d3 !default;
 $white: #ffffff !default;
+$natural: #fcf3ec !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -29,7 +30,8 @@ $colors: map-merge(
     "primary": $neon-green,
     "secondary": $neon-blue,
     "accent": $gold,
-    "white": $white
+    "white": $white,
+    "neutral": $natural
   ),
   $colors
 );

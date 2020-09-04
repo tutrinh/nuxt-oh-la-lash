@@ -5,7 +5,7 @@
       :has-nav="true"
       :is-fullheight="true"
       bg-img="images/lashes/alexander-krivitskiy-PoogTvXLv8U-unsplash.jpg"
-      bg-position="position-top"
+      bg-position="bg-position-top"
     >
       <div class="row">
         <div class="col-md-6">
@@ -14,34 +14,23 @@
           <div
             class="sub-title my-4"
           >Subtitle - Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, pariatur?</div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti fugiat inventore velit culpa incidunt ea aliquam, quaerat unde. Eum praesentium quam incidunt eos numquam laudantium harum laboriosam dolorem in?</p>
 
           <div class="spacer"></div>
           <div class="spacer"></div>
 
-          <div class="row my-4">
-            <div class="col border-right">
-              <div class="sub-title color-sunset">hello</div>
-              <p
-                class="line-height-tight"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero quasi sunt?</p>
+          <tu-card
+            class="has-shadow p-5 is-rounded color-bg-neutral color-black"
+            bg-img="images/lashes/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
+            bg-position="bg-position-bottom"
+          >
+            <div class="d-flex flex-column justify-content-end align-items-center">
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <h1 class="title jumbo gradient-text font-rozha">Hello You</h1>
             </div>
-            <div class="col">
-              <div class="sub-title color-neon-green">hello</div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempora eius soluta est!
-            </div>
-            <div class="col">
-              <div class="isCard has-shadow">
-                <div class="sub-title color-neon-blue">hello</div>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="isCard has-shadow color-bg-white color-black">
-                <div class="sub-title color-neon-blue">hello</div>
-                <p class="line-height-tight">Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-            </div>
-          </div>
+          </tu-card>
 
           <div class="row">
             <div class="col my-4">
@@ -87,18 +76,52 @@
       <div class="container container-fluid py-4">
         <div class="grid-three grid-gap-1">
           <div class="has-shadow">
-            <tu-img img="images/lashes/atikh-bana-zPFws4toKhg-unsplash.jpg" :height="75"></tu-img>
+            <tu-img
+              img="images/lashes/atikh-bana-zPFws4toKhg-unsplash.jpg"
+              :height="75"
+              position="object-position-top"
+            ></tu-img>
           </div>
           <div class="has-shadow">
-            <div class="image-placeholder">
-              <b-img-lazy fluid src="images/lashes/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg" />
-            </div>
+            <tu-img img="images/lashes/hayley-kim-design-sRSRuxkOuzI-unsplash.jpg" :height="75"></tu-img>
           </div>
           <div class="has-shadow">
-            <div class="image-placeholder">
-              <b-img-lazy fluid src="images/lashes/semen-zhuravlev-UtSk30R6i5c-unsplash.jpg" />
-            </div>
+            <tu-img img="images/lashes/semen-zhuravlev-UtSk30R6i5c-unsplash.jpg" :height="75"></tu-img>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section -->
+    <div class="section color-bg-white">
+      <div class="container container-fluid py-4">
+        <div class="grid-half grid-gap-1">
+          <tu-card
+            class="has-shadow p-5 is-rounded color-bg-neutral color-black"
+            bg-img="images/lashes/autumn-goodman-vTL_qy03D1I-unsplash.jpg"
+            bg-position="bg-position-bottom"
+          >
+            <div class="d-flex flex-column justify-content-between">
+              <h1 class="title jumbo gradient-text font-rozha">Hello Again And Again</h1>
+              <div class="spacer"></div>
+              <div class="spacer"></div>
+              <div>
+                <div class="title font-montserrat font-weight-700 color-red">Another Card</div>
+                <p
+                  class="line-height-tight"
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam tenetur quod quibusdam hic veniam inventore eaque repudiandae, eos optio velit, ipsa excepturi? Iste sapiente natus ipsam sint quo nemo quis?</p>
+              </div>
+            </div>
+          </tu-card>
+          <tu-card
+            class="has-shadow p-5 is-rounded color-bg-coral"
+            bg-img
+            bg-position="bg-position-bottom"
+          >
+            <h1 class="title jumbo gradient-text font-rozha">Hello Again And Again</h1>
+            <div class="sub-title">Another Card</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam tenetur quod quibusdam hic veniam inventore eaque repudiandae, eos optio velit, ipsa excepturi? Iste sapiente natus ipsam sint quo nemo quis?</p>
+          </tu-card>
         </div>
       </div>
     </div>
@@ -144,7 +167,7 @@
       <div class="container container-fluid">
         <div class="row">
           <div class="col py-4 grid-item-center">
-            <div class="title jumbo font-rozha mt-4">Another Section</div>
+            <div class="title jumbo font-rozha mt-4 gradient-text">Oh Lá Lash</div>
             <div class="spacer"></div>
 
             <!-- Grid 3 Cols -->
@@ -156,19 +179,17 @@
                   <p>ipsum, velit ullam impedit odio maiores voluptatum commodi maxime deleniti laudantium nulla! Odit in fugiat nisi.</p>
                 </div>
                 <div class="my-4">
-                  <a href="/styleguide" class="btn color-bg-neon-blue">
-                    Styleguide
+                  <a href="/styleguide" class="btn color-bg-red btn-round color-white">
+                    Map It
                     <span class="link-icon">
                       <svg
+                        viewBox="0 0 15 15"
+                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
+                        width="18"
+                        height="18"
                       >
-                        <path
-                          fill-rule="evenodd"
-                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                          clip-rule="evenodd"
-                        />
+                        <path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor" />
                       </svg>
                     </span>
                   </a>
@@ -185,14 +206,23 @@
                     Styleguide
                     <span class="link-icon">
                       <svg
+                        viewBox="0 0 15 15"
+                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
+                        width="18"
+                        height="18"
                       >
                         <path
-                          fill-rule="evenodd"
-                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                           clip-rule="evenodd"
+                          d="M7.5 8.495a2 2 0 002-1.999 2 2 0 00-4 0 2 2 0 002 1.999z"
+                          stroke="currentColor"
+                          stroke-linecap="square"
+                        />
+                        <path
+                          clip-rule="evenodd"
+                          d="M13.5 6.496c0 4.997-5 7.995-6 7.995s-6-2.998-6-7.995A5.999 5.999 0 017.5.5c3.313 0 6 2.685 6 5.996z"
+                          stroke="currentColor"
+                          stroke-linecap="square"
                         />
                       </svg>
                     </span>

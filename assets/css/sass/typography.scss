@@ -17,9 +17,34 @@
 
 .gradient-text {
   // Gradient text CSS
-  background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
+  background: linear-gradient(to right, #ff8a00 0%, #da1b60 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.gradient-text-pink {
+  // Gradient text CSS
+
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-pink {
+  // Gradient text CSS
+
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7) !important;
 }
 
 .accent-line {

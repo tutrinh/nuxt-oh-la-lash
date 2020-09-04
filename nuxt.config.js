@@ -31,6 +31,11 @@ export default {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css2?family=Alata&family=Permanent+Marker&family=Rozha+One&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@100;300;400;500;700;800&display=swap"
       }
     ]
   },

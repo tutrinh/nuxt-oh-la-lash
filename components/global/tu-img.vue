@@ -16,6 +16,7 @@ export default {
     },
     position: {
       type: String,
+      default: "",
     },
   },
 };

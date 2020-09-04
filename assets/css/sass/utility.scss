@@ -12,14 +12,14 @@
   border-radius: 0px;
   width: 100%;
   position: relative;
+}
 
-  &.position-top {
-    background-position: top !important;
-  }
+.bg-position-top {
+  background-position: top !important;
+}
 
-  &.position-bottom {
-    background-position: bottom !important;
-  }
+.bg-position-bottom {
+  background-position: bottom !important;
 }
 
 @include media-breakpoint-down(sm) {
@@ -46,7 +46,7 @@
   margin: 40px 0;
 }
 
-.isCard {
+.is-card {
   background-color: #0d1c2e;
   padding: 20px;
   border-radius: 10px;
@@ -54,6 +54,10 @@
 
 .has-shadow {
   box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);
+}
+
+.is-rounded {
+  border-radius: 10px;
 }
 
 .grid-item-center {
@@ -96,5 +100,5 @@
 
 .grid-sidebar {
   display: grid;
-  grid-template-columns: minmax(150px, 25%) 1fr;
+  grid-template-columns: minmax(250px, 25%) 1fr;
 }
