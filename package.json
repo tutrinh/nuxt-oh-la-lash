@@ -16,6 +16,7 @@
     "prism-themes": "^1.4.0"
   },
   "devDependencies": {
+    "fslightbox-vue": "^1.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.0"
   }
