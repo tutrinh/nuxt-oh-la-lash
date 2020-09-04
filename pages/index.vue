@@ -247,34 +247,6 @@
 
 
 
-<script>
-export default {
-  name: "index",
-  layout: "home",
-  mounted() {
-    var windowLocation =
-      "https://sitecoretest.heart.org/en/test_pages/impact-map";
-
-    var regMatch = /\/impact-map/;
-
-    console.log("REG MATCH");
-    console.log(window.location.href);
-
-    console.log(regMatch.test(windowLocation)); //Worked output true
-
-    //     html {
-    //   scroll-behavior: smooth;
-    // }
-
-    // if there is a value in the state dropdown then scroll to map
-    // document.getElementById('state').value !== "" then scroll to id #map-results
-
-    // var main = document.body
-    // var mapContainer = document.querySelector('.container-fluid.impact-map')
-    // main.scrollTop = mapContainer.offsetTop
-  },
-};
-</script>
 
 
 
