@@ -1,0 +1,21 @@
+// From vercel site
+
+.header_wrapper__3uGfW:not(.header_not_sticky__3C_EJ) {
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+}
+
+.header_wrapper__3uGfW {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--geist-background);
+  z-index: 101;
+  min-height: var(--header-height);
+  transition: box-shadow 0.1s ease 0s;
+  box-shadow: var(--header-border-bottom);
+}
