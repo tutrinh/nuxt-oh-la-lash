@@ -1,9 +1,27 @@
 .footer {
-  a {
-    color: #21b8d3;
+  &-text-right {
+    text-align: right;
 
-    &:hover {
-      color: white;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+    }
+  }
+
+  &-nav {
+    &--item {
+      background-color: rgba(255, 255, 255, 0.35);
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+
+      @include media-breakpoint-up(md) {
+        background-color: transparent !important;
+        display: inherit;
+        margin: inherit;
+        padding: inherit;
+        border-radius: 0;
+      }
     }
   }
 }

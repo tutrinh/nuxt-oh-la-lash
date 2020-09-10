@@ -1,26 +1,31 @@
 // Color Palette
-$navy: #283149 !default;
+$navy: #01316f !default;
+$navy-alt: #0242a6 !default;
 $coral: #ffc2c2 !default;
 $sunset: #ffb421 !default;
 $light-gray: #f6f4f2 !default;
+$gray-custom: #474c51;
 $smoke: #ededed !default;
-$black: #0e0f1e !default;
+$black: #0e0f1e;
 $gold: #e6b31e !default;
 $red: #f64e4d !default;
 $light-blue: #dbedf3 !default;
-$neon-green: #47ebb4 !default;
+$neon-green: #1eb955 !default;
 // $neon-green: #47e090 !default;
 $neon-blue: #21b8d3 !default;
 $white: #ffffff !default;
 $natural: #fcf3ec !default;
+$hotpink: rgb(255, 105, 180) !default;
 
 $colors: () !default;
 $colors: map-merge(
   (
     "navy": $navy,
+    "navy-alt": $navy-alt,
     "coral": $coral,
     "sunset": $sunset,
     "light-gray": $light-gray,
+    "gray": $gray-custom,
     "black": $black,
     "gold": $gold,
     "red": $red,
@@ -31,7 +36,8 @@ $colors: map-merge(
     "secondary": $neon-blue,
     "accent": $gold,
     "white": $white,
-    "neutral": $natural
+    "neutral": $natural,
+    "hotpink": $hotpink
   ),
   $colors
 );
@@ -47,7 +53,7 @@ $colors: map-merge(
 @mixin color {
   @each $name, $hex in $colors {
     &-#{$name} {
-      color: $hex;
+      color: $hex !important;
     }
   }
 } // @mixin colors

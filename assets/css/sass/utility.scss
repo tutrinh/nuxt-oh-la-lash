@@ -15,11 +15,15 @@
 }
 
 .bg-position-top {
-  background-position: top !important;
+  background-position: top center !important;
 }
 
 .bg-position-bottom {
-  background-position: bottom !important;
+  background-position: bottom center !important;
+}
+
+.bg-position-center {
+  background-position: center center !important;
 }
 
 @include media-breakpoint-down(sm) {
@@ -29,14 +33,23 @@
 }
 
 .border-right {
-  border-right: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-right: 1px solid rgba(255, 105, 180, 1) !important;
 }
 .border-bottom {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 .border-top {
-  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  // border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-top: 1px solid rgba(255, 105, 180, 1) !important;
+}
+.border-left-pink {
+  // border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-left: 3px solid rgba(255, 105, 180, 1) !important;
+}
+.border-left-red {
+  // border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-left: 3px solid $red !important;
 }
 
 .spacer {
@@ -53,7 +66,7 @@
 }
 
 .has-shadow {
-  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .is-rounded {
@@ -92,13 +105,45 @@
 }
 
 .grid-gap-1 {
-  grid-gap: 1em !important;
+  grid-gap: 1rem !important;
 }
 .grid-gap-0 {
   grid-gap: 0 !important;
+}
+.grid-gap-3 {
+  grid-gap: 3rem !important;
 }
 
 .grid-sidebar {
   display: grid;
   grid-template-columns: minmax(250px, 25%) 1fr;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.py-sm-4 {
+  @include media-breakpoint-down(sm) {
+    padding: 1rem 0;
+  }
+}
+
+// Height
+// v-100 is bootstrap height: 100%
+// Custom
+.h-200 {
+  min-height: 200px !important;
+}
+.h-300 {
+  min-height: 300px !important;
+}
+.h-400 {
+  min-height: 400px !important;
+}
+.h-500 {
+  min-height: 500px !important;
+}
+.h-600 {
+  min-height: 600px !important;
 }

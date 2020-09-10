@@ -10,9 +10,12 @@
 @import "sass/nuxt-content";
 @import "sass/card-half-image";
 @import "sass/tu-card";
+@import "sass/flickity";
+@import "sass/mobile-menu";
+@import "sass/tables";
 
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -31,18 +34,29 @@ html {
 }
 
 body {
-  color: white !important;
-  background-color: #0e0f1e !important;
-  font-family: "Alata", sans-serif;
+  color: $navy-alt !important;
+  background-color: $natural !important;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: currentColor;
+
+  &:hover {
+    color: currentColor;
+    text-decoration: none;
+  }
 }
 
 .navbar-layout a {
-  color: white;
+  color: $navy;
   padding-top: 0;
   padding-bottom: 0;
 
   &:hover {
-    color: white;
+    color: $navy;
   }
 }
 
@@ -65,5 +79,18 @@ body {
 .logo {
   &--small {
     width: 78px;
+  }
+}
+
+.container__menu {
+  display: flex;
+
+  ul.nav {
+    margin: auto;
+
+    li a {
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 }

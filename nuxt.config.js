@@ -3,7 +3,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: "universal",
+  mode: "spa",
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -15,14 +15,40 @@ export default {
    */
   head: {
     // title: process.env.npm_package_name || "",
-    title: "Personal Site of Tu Trinh",
+    title: "Oh Lá Lash",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content:
+          "Dallas Metroplex lash extension salon servicing Dallas, Plano, Frisco, McKinney, Southlake, Garland and Rowlett. Appointments are available. Book now."
+      },
+      {
+        property: "og:title",
+        content: "Oh La Lash"
+      },
+      {
+        property: "og:description",
+        content:
+          "Dallas Metroplex lash extension salon servicing Dallas, Plano, Frisco, McKinney, Southlake, Garland and Rowlett. Appointments are available. Book now."
+      },
+      {
+        property: "og:image",
+        content: "http://www.ohlalash.com/images/lashes/lash-home-image.jpg"
+      },
+      {
+        property: "og:type",
+        content: "website"
+      },
+      {
+        property: "og:url",
+        content: "http://www.ohlalash.com"
+      },
+      {
+        property: "og:site_name",
+        content: "www.ohlalash.com"
       }
     ],
     link: [
@@ -35,7 +61,11 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@100;300;400;500;700;800&display=swap"
+          "https://fonts.googleapis.com/css2?family=Gilda+Display&family=Snippet&family=Montserrat:wght@100;300;400;500;700;800&display=swap"
+      },
+      {
+        rel: "canonical",
+        href: "http://www.ohlalash.com"
       }
     ]
   },

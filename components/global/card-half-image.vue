@@ -2,9 +2,9 @@
   <div class="card-half-image has-shadow">
     <div class="c-card-half-image grid-half">
       <div class="card-media">
-        <div class="image-placeholder">
+        <div class="image-placeholder is-rounded">
           <!-- <img :src="img" alt /> -->
-          <b-img-lazy fluid :src="img" :class="position" />
+          <b-img-lazy fluid :src="img" :class="[position, 'is-rounded']" />
         </div>
       </div>
       <div class="content d-flex flex-column color-black">

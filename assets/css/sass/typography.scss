@@ -3,12 +3,19 @@
   line-height: 1;
 
   &.jumbo {
-    font-size: 3em;
+    font-size: 2em;
+    @include media-breakpoint-up(md) {
+      font-size: 3em;
+    }
   }
 }
 .sub-title {
   font-size: 1.5em;
   line-height: 1em;
+}
+
+.heading {
+  font-size: 1.5rem;
 }
 
 .line-height-tight {
@@ -17,7 +24,40 @@
 
 .gradient-text {
   // Gradient text CSS
-  background: linear-gradient(to right, #ff8a00 0%, #da1b60 50%);
+  background: linear-gradient(to right, #ff8a00 0%, #da1b60 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-blue {
+  // Gradient text CSS
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-orange {
+  // Gradient text CSS
+  background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-blue-purple {
+  // Gradient text CSS
+  background: linear-gradient(90deg, #007cf0, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-rainbow {
+  // Gradient text CSS
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -66,5 +106,16 @@
     background-color: currentColor;
     vertical-align: middle;
     margin-top: 10px;
+  }
+}
+
+.logo-text {
+  letter-spacing: -6px;
+  font-size: 60px !important  ;
+  padding: 10px;
+
+  &.small {
+    font-size: 40px !important;
+    letter-spacing: -4px;
   }
 }

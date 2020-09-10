@@ -1,10 +1,14 @@
 .btn {
-  min-width: 160px;
+  min-width: 100%;
+  @include media-breakpoint-up(lg) {
+    min-width: 280px;
+  }
   padding-top: 10px;
   padding-bottom: 10px;
+  color: $white;
 
   &:hover {
-    color: currentColor;
+    color: $white;
     .link-icon {
       margin-left: 8px;
     }
@@ -16,6 +20,12 @@
     &:hover {
       color: $white;
     }
+  }
+
+  &.jumbo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px !important;
   }
 }
 
