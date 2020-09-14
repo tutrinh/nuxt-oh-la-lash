@@ -4,11 +4,13 @@ $navy-alt: #0242a6 !default;
 $coral: #ffc2c2 !default;
 $sunset: #ffb421 !default;
 $light-gray: #f6f4f2 !default;
-$gray-custom: #474c51;
+$gray-custom: #3c4045;
 $smoke: #ededed !default;
 $black: #0e0f1e;
+$black-alt: #313538;
 $gold: #e6b31e !default;
 $red: #f64e4d !default;
+$purple: #7140eb !default;
 $light-blue: #dbedf3 !default;
 $neon-green: #1eb955 !default;
 // $neon-green: #47e090 !default;
@@ -16,6 +18,7 @@ $neon-blue: #21b8d3 !default;
 $neon-blue-alt: #0070f3 !default;
 $neon-neon-pink: #ff2d81 !default;
 $white: #ffffff !default;
+$white-alt: #f5f5f5 !default;
 $natural: #fcf3ec !default;
 $hotpink: rgb(255, 105, 180) !default;
 
@@ -29,6 +32,7 @@ $colors: map-merge(
     "light-gray": $light-gray,
     "gray": $gray-custom,
     "black": $black,
+    "black-alt": $black-alt,
     "gold": $gold,
     "red": $red,
     "light-blue": $light-blue,
@@ -38,6 +42,7 @@ $colors: map-merge(
     "secondary": $neon-blue,
     "accent": $gold,
     "white": $white,
+    "white-alt": $white-alt,
     "neutral": $natural,
     "hotpink": $hotpink
   ),

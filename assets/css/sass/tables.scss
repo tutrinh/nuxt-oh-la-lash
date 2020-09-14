@@ -1,8 +1,19 @@
-table tr th,
-table tr td {
-  color: $navy !important;
+.table tr th,
+.table tr td {
+  // color: $navy !important;
+  padding: 0.55rem;
 }
 
-table tr td {
+table tr td,
+table tr th {
   font-weight: 500;
+}
+
+.featured-price-card {
+  min-height: auto;
+  height: auto;
+
+  @include media-breakpoint-up(md) {
+    min-height: 575px;
+  }
 }

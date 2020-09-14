@@ -13,8 +13,10 @@
               <a href="tel:9722070093" class="color-navy">BOOK TODAY (972) 207-0093</a>
             </div>
             <p class="small color-navy d-none d-md-block">
-              Copyright &copy; {{year}} Oh Lá Lash.
-              All rights reserved.
+              &copy; {{year}} Oh Lá Lash. All rights reserved. Designed and developed by
+              <a
+                href="hellotu.com"
+              >hellotu.com</a>
             </p>
           </div>
         </div>
@@ -32,8 +34,10 @@
       </div>
       <div class="d-md-none">
         <p class="small color-navy">
-          Copyright &copy; {{year}} Oh Lá Lash.
-          All rights reserved.
+          &copy; {{year}} Oh Lá Lash. All rights reserved. Designed and developed by
+          <a
+            href="hellotu.com"
+          >hellotu.com</a>
         </p>
       </div>
     </div>
